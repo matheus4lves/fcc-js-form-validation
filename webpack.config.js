@@ -19,8 +19,9 @@ module.exports = {
   entry: "./app/assets/scripts/index.js",
   // Path to output the bundle
   output: {
-    path: path.resolve(__dirname, "app"),
+    path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
+    clean: true,
   },
   // Loaders
   module: {
@@ -59,6 +60,8 @@ module.exports = {
   target: "web",
   // Used to quickly develop an application
   devServer: {
+    // Tell webpack-dev-server where to look for files
+    static: "./dist",
     // Make the server externally accessible and the localIp visible in the URL
     host: "local-ip",
     // Enable Hot Module Replacement
@@ -79,7 +82,8 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "app/index.html",
+      template: "app/template.html",
     }),
   ],
+  devtool: "eval-source-map",
 };
