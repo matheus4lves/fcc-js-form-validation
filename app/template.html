@@ -7,7 +7,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
   </head>
   <body>
-    <h1>My name is Giovanni Georgio, but everybody calls me Bubbles.</h1>
+    <div class="container">
+      <form class="form" action="" id="form">
+        <div class="form__title">Get Started</div>
+        <!-- Username input -->
+        <div>
+          <label class="form__label" for="username">Username</label>
+          <i class="fas fa-user"></i>
+          <input class="form__input" type="text" name="username" id="username" placeholder="Matheus Alves" />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!-- E-mail input -->
+        <div>
+          <label class="form__label" for="email">Email</label>
+          <i class="far fa-envelope"></i>
+          <input class="form__input" type="email" name="email" id="email" placeholder="email@something.com" />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <!-- Password -->
+        <div>
+          <label class="form__label" for="password">Password</label>
+          <i class="fas fa-lock"></i>
+          <input class="form__input" type="password" name="password" id="password" placeholder="Type your password" />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <!-- Submit button -->
+        <button class="btn form__button" type="submit">Submit</button>
+      </form>
+    </div>
     <script src="../dist/bundle.js"></script>
   </body>
 </html>
