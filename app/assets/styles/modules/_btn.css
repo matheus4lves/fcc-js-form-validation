@@ -1,0 +1,25 @@
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+
+  &__facebook {
+    color: white;
+    background-color: #4f70b5;
+  }
+
+  &__google,
+  &__facebook {
+    padding: 10px 5px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $mainGray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+}
