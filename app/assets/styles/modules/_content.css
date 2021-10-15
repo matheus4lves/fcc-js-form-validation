@@ -1,0 +1,9 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: $mainOrange;
+  width: 55%;
+  min-height: 100vh;
+  padding: 0.625rem 1.25rem;
+}
