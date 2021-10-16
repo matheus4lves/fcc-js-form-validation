@@ -1,5 +1,9 @@
 .main-illustration {
   background: url("https://svgshare.com/i/_gZ.svg") no-repeat center;
   background-size: contain;
-  height: 65%;
+  height: 20rem;
+
+  @mixin atSmall {
+    height: 25rem;
+  }
 }

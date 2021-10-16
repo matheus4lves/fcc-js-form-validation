@@ -4,7 +4,7 @@
   justify-content: center;
   box-shadow: 2px 2px 4px $shadow;
   padding: 3.125rem;
-  width: 45%;
+  width: 100%;
   max-width: none;
 
   &__title {
@@ -87,5 +87,10 @@
   span {
     color: $mainOrange;
     cursor: pointer;
+  }
+
+  @mixin atSmall {
+    padding: 1.25rem;
+    width: 45%;
   }
 }

@@ -3,7 +3,11 @@
   flex-direction: column;
   justify-content: space-around;
   background-color: $mainOrange;
-  width: 55%;
+  width: 100%;
   min-height: 100vh;
   padding: 0.625rem 1.25rem;
+
+  @mixin atSmall {
+    width: 55%;
+  }
 }

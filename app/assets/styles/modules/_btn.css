@@ -22,4 +22,12 @@
     box-shadow: 2px 2px 4px $shadow;
     cursor: pointer;
   }
+
+  @mixin atSmall {
+    flex-direction: column;
+  }
+
+  @mixin atLarge {
+    flex-direction: row;
+  }
 }
