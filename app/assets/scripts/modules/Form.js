@@ -40,7 +40,7 @@ class Form {
     });
   }
 
-  // Define fucntionality
+  // Define functionality
   cleanUp(data) {
     // Prevent the user from sending something else than a String
     if (typeof data.username != "string") data.username = "";
